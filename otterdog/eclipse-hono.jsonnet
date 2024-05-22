@@ -28,8 +28,6 @@ orgs.newOrg('eclipse-hono') {
       dependabot_security_updates_enabled: true,
       description: "Eclipse Hono™ Project",
       homepage: "http://www.eclipse.org/hono",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "eclipseiot",
         "internet-of-things",
@@ -67,8 +65,6 @@ orgs.newOrg('eclipse-hono') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Hono Extras ",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -82,8 +78,6 @@ orgs.newOrg('eclipse-hono') {
       has_projects: false,
       has_wiki: false,
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
