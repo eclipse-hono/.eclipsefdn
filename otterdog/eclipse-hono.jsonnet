@@ -27,7 +27,7 @@ orgs.newOrg('eclipse-hono') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Eclipse Hono™ Project",
-      homepage: "http://www.eclipse.org/hono",
+      homepage: "https://eclipse.dev/hono",
       topics+: [
         "eclipseiot",
         "internet-of-things",
