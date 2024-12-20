@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-hono') {
+orgs.newOrg('iot.hono', 'eclipse-hono') {
   settings+: {
     description: "",
     name: "Eclipse Hono™",
