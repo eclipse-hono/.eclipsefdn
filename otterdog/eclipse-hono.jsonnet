@@ -18,6 +18,26 @@ orgs.newOrg('iot.hono', 'eclipse-hono') {
       ],
     },
   ],
+  secrets+: [
+    orgs.newOrgSecret('GPG_KEY_ID') {
+      value: "pass:bots/iot.hono/gpg/key_id",
+    },
+    orgs.newOrgSecret('GPG_PASSPHRASE') {
+      value: "pass:bots/iot.hono/gpg/passphrase",
+    },
+    orgs.newOrgSecret('GPG_PRIVATE_KEY') {
+      value: "pass:bots/iot.hono/gpg/secret-subkeys.asc",
+    },
+    orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_PASSWORD') {
+      value: "pass:bots/iot.hono/central.sonatype.org/token-password",
+    },
+    orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_USERNAME') {
+      value: "pass:bots/iot.hono/central.sonatype.org/token-username",
+    },
+    orgs.newOrgSecret('SONAR_TOKEN') {
+      value: "pass:bots/iot.hono/sonarcloud.io/token",
+    },
+  ],
   _repositories+:: [
     orgs.newRepo('hono') {
       allow_merge_commit: true,
