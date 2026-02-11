@@ -43,6 +43,9 @@ orgs.newOrg('iot.hono', 'eclipse-hono') {
     orgs.newOrgSecret('DOCKER_HUB_TOKEN') {
       value: "pass:bots/iot.hono/docker.com/api-token",
     },
+    orgs.newOrgSecret('HONO_BOT_PAT') {
+      value: "pass:bots/iot.hono/github.com/token-hd7130",
+    },
   ],
   _repositories+:: [
     orgs.newRepo('hono') {
